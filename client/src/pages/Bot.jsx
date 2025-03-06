@@ -132,9 +132,9 @@ function Bot() {
               <p className="mb-6">Ask me anything about personal finance, investments, or financial planning.</p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
                 <SuggestionButton
-                  text="What's the best way to start investing with $1000?"
+                  text="What's the best way to start investing with ₹1000?"
                   onClick={() => {
-                    setInput("What's the best way to start investing with $1000?");
+                    setInput("What's the best way to start investing with ₹1000?");
                   }}
                 />
                 <SuggestionButton
