@@ -68,7 +68,7 @@ function Bot() {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/', {
+      const response = await axios.post('https://finwise-advisor.onrender.com/', {
         message: input,
         level: expertiseLevel
       });
@@ -102,7 +102,7 @@ function Bot() {
 
   const clearChat = async () => {
     try {
-      await axios.post('http://localhost:5000/clear-history');
+      await axios.post('https://finwise-advisor.onrender.com/clear-history');
       setMessages([]);
     } catch (error) {
       console.error('Error clearing chat history:', error);
